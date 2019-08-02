@@ -15,7 +15,7 @@ RUN set -ex && \
     wget --no-check-certificate -q ${frpc_latest} -O ${frpc_latest_filename} && \
     tar xzf ${frpc_latest_filename} && \
     mv frp_${frpc_version}_linux_${arch}/frpc ${frpc_DIR}/frpc && \
-    apk --no-cache del --virtual TMP && \
+    apk --no-cache del TMP && \
     rm -rf /var/cache/apk/* ~/.cache ${frpc_DIR}/${frpc_latest_filename} ${frpc_DIR}/frp_${frpc_version}_linux_${arch}
 
 VOLUME /conf
