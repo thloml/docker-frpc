@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER zhang@gmail.com
 
 
-ENV frpc_version=0.27.0 \
+ENV frpc_version=0.30.0 \
     frpc_DIR=/usr/local/frpc \
     arch=amd64
 
@@ -20,4 +20,4 @@ RUN set -ex && \
 
 VOLUME /conf
 
-ENTRYPOINT ["/usr/local/frpc/frpc", "-c", "/conf/frpc.ini"]
+ENTRYPOINT ["/usr/local/frpc/frpc"]
