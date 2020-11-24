@@ -20,4 +20,4 @@ RUN set -ex && \
 
 VOLUME /conf
 
-ENTRYPOINT ["/usr/local/frpc/frpc"]
+ENTRYPOINT ["/usr/local/frpc/frpc", "-c", "/conf/frpc.ini"]
