@@ -4,7 +4,7 @@ MAINTAINER zhang@gmail.com
 
 ARG frpc_version
 ARG arch=amd64
-ENV frpc_version=${frpc_version:-0.29.1} \
+ENV frpc_version=${frpc_version:-0.34.3} \
     frpc_DIR=/usr/local/frpc \
     arch=${arch:-amd64}
 
